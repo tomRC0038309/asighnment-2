@@ -26,5 +26,10 @@ namespace asighnment_2
         {
 
         }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
