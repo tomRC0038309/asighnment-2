@@ -41,5 +41,60 @@ namespace asighnment_2
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            double r1 = double.Parse(resistor1.Text);
+            double r2 = double.Parse(resistor2.Text);
+            double r3 = double.Parse(resistor3.Text);
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
     }
 }

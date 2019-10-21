@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.resistor2 = new System.Windows.Forms.TextBox();
+            this.resistor1 = new System.Windows.Forms.TextBox();
+            this.resistor3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -44,31 +44,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // resistor2
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(63, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "r2";
-            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            this.resistor2.Location = new System.Drawing.Point(155, 73);
+            this.resistor2.Name = "resistor2";
+            this.resistor2.Size = new System.Drawing.Size(63, 20);
+            this.resistor2.TabIndex = 1;
+            this.resistor2.Text = "r2";
+            this.resistor2.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
-            // textBox2
+            // resistor1
             // 
-            this.textBox2.Location = new System.Drawing.Point(65, 12);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "r1";
-            this.textBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
+            this.resistor1.Location = new System.Drawing.Point(65, 12);
+            this.resistor1.Name = "resistor1";
+            this.resistor1.Size = new System.Drawing.Size(100, 20);
+            this.resistor1.TabIndex = 2;
+            this.resistor1.Text = "r1";
+            this.resistor1.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
-            // textBox3
+            // resistor3
             // 
-            this.textBox3.Location = new System.Drawing.Point(65, 117);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(76, 20);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "r3";
+            this.resistor3.Location = new System.Drawing.Point(65, 117);
+            this.resistor3.Name = "resistor3";
+            this.resistor3.Size = new System.Drawing.Size(76, 20);
+            this.resistor3.TabIndex = 3;
+            this.resistor3.Text = "r3";
             // 
             // label1
             // 
@@ -88,6 +88,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // pictureBox2
             // 
@@ -162,12 +163,13 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.resistor3);
+            this.Controls.Add(this.resistor1);
+            this.Controls.Add(this.resistor2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -178,9 +180,9 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox resistor2;
+        private System.Windows.Forms.TextBox resistor1;
+        private System.Windows.Forms.TextBox resistor3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
