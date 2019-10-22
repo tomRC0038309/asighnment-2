@@ -86,5 +86,14 @@
   <ItemGroup>
     <None Include="Resources\parralelle.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two series.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two series1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two series2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
