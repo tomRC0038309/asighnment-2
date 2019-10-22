@@ -50,51 +50,98 @@ namespace asighnment_2
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            double r1 = double.Parse(resistor1.Text);
-            double r2 = double.Parse(resistor2.Text);
-            double r3 = double.Parse(resistor3.Text);
-            
+            double r1;
 
+            try
+            {
+                r1 = double.Parse(textbox1.Text);
+                //this wwill convert the numbersin the textbox into a double variable
+            }
+            catch
+            {
+                MessageBox.Show("Not a correct value. ");
+                r1 = 0.0;
+                //this will crash if the value is not suitable.
+            }
+            double r2;
 
+            try
+            {
+                r2 = double.Parse(textbox2.Text);
+                //this wwill convert the numbersin the textbox into a double variable
+            }
+            catch
+            {
+                MessageBox.Show("Not a correct value. ");
+                r2 = 0.0;
+                //this will crash if the value is not suitable.
+            }
+            double r3;
 
+            try
+            {
+                r3 = double.Parse(textbox3.Text);
+                //this wwill convert the numbersin the textbox into a double variable
+            }
+            catch
+            {
+                MessageBox.Show("Not a correct value. ");
+                r3 = 0.0;
+                //this will crash if the value is not suitable.
+            }
+            Double tot1 = r1 + r2 + r3;
+            label3.Text = "Total Resistance = " + tot1.ToString("N3") + " Ω";
+        }
 
+        private void PictureBox1_Click_1(object sender, EventArgs e)
+        {
 
+        }
 
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            double r4;
 
+            try
+            {
+                r4 = double.Parse(textBox4.Text);
+                //this wwill convert the numbersin the textbox into a double variable
+            }
+            catch
+            {
+                MessageBox.Show("Not a correct value. ");
+                r4 = 0.0;
+                //this will crash if the value is not suitable.
+            }
+            double r5;
 
+            try
+            {
+                r5 = double.Parse(textBox5.Text);
+                //this wwill convert the numbersin the textbox into a double variable
+            }
+            catch
+            {
+                MessageBox.Show("Not a correct value. ");
+                r5 = 0.0;
+                //this will crash if the value is not suitable.
+            }
+            double r6;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            try
+            {
+                r6 = double.Parse(textBox6.Text);
+                //this wwill convert the numbersin the textbox into a double variable
+            }
+            catch
+            {
+                MessageBox.Show("Not a correct value. ");
+                r6 = 0.0;
+                //this will crash if the value is not suitable.
+            }
+            Double tot2 = (1 / ((1.0 / r4) + ((1.0 / r5) + (1.0 / r6))));
+            label4.Text = "Total Resistance = " + tot2.ToString("N3") + " Ω";
         }
     }
 }
+           
